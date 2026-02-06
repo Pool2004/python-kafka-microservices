@@ -44,4 +44,4 @@ for message in consumer:
             producer.send("order_created.DLQ", data)
             producer.flush()
             consumer.commit()
-            print("Sent to DLQ ❌")
+            print("Sent to DLQ")
